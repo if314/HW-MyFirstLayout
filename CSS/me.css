@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box; 
+    font-family: "roboto slab", Verdana, Sans-serif;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+
+    margin: 0;
+  }
+  .col-1 {
+  /*  position: fixed;
+  background: #fff; the prj layout spreds the whole way*/ 
+  flex: 1;
+  position: relative;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+  }
+  .content > article {
+    flex: 4;
+  }
+  
+ .me{
+    font-style: normal;
+    font-weight: 200;
+    padding: 0;
+       margin: 20vh 40vh;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+  
+  header{
+    background: #fff;
+    height: 8vh;
+  }
+   footer {
+    height: 10vh;
+    
+  }
+  header, footer, article, nav {
+    padding: 1em;   
+  }
+  
+ a{
+    text-decoration: none;
+      color:#000;
+      transition:all 8ms ease-in
+  }
+
+  nav a:hover{
+   /* opacity: 50%;*/
+    text-shadow: 0 0 25px rgba(11, 14, 212, 1);
+  }
+
+ 
+  ul{
+         position: fixed;
+  background: #fff; 
+    list-style-type:none
+    
+  }
+
+  ul > :first-child {
+  font-size:1.4em;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+
+ }
+li{
+  padding:  0.3em;
+}
+
+.project{
+    width:40%;
+    justify-items: flex-start;
+    margin: 10px;
+   
+}
+
+.cell {
+    /*  flex:2;
+  width: 100%;  */
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 30px rgba(158, 158, 158, 0.5);
+
+    cursor: pointer;
+
+    transition:all 0.5s ease-in-out;
+    transition-delay: 8ms;
+}
+.cell:hover{
+  box-shadow: 0 0 30px rgba(11, 14, 212, 0.8);
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+.space{
+    margin-bottom: 6rem;
+}
+/* about page */
+.one{
+    font-style: normal;
+    font-weight: 200;
+    padding: 0;
+
+      margin: 10vh 10vh;
+     flex:3;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.two{
+    flex:3;
+    margin: 0vh 10vh 10vh 0vh;
+
+}
+.two img{
+    width: 80%;
+    opacity: 80%;
+}
+
+.link{
+    text-decoration: underline;
+    color:#001aff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
